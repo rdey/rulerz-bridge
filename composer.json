@@ -1,16 +1,9 @@
 {
-    "name": "kphoen/rulerz-bridge",
+    "name": "redeye/rulerz-bridge",
     "type": "symfony-bridge",
     "license": "MIT",
-    "homepage": "https://github.com/K-Phoen/rulerz-bridge",
     "description": "Symfony RulerZ Bridge",
     "keywords": ["symfony", "bridge", "specification", "doctrine", "ruler", "rulerz"],
-    "authors": [
-        {
-            "name": "Kévin Gomez",
-            "email": "contact@kevingomez.fr"
-        }
-    ],
     "autoload": {
         "psr-4": { "Symfony\\Bridge\\RulerZ\\": "" },
         "exclude-from-classmap": [
@@ -19,13 +12,14 @@
     },
     "require": {
         "php": ">=7.1",
-        "kphoen/rulerz": "~0.19,>=0.19.3|^1.0",
-        "symfony/validator": "^3.0|^4.0",
-        "symfony/form": "^3.0|^4.0"
+        "redeye/rulerz": "^1.0",
+        "symfony/form": "^3.0|^4.0",
+        "symfony/options-resolver": "^3.0|^4.0",
+        "symfony/validator": "^3.0|^4.0"
     },
     "require-dev": {
+        "liip/rmt": "^1.2",
         "phpunit/phpunit": "~7.1",
-        "symfony/phpunit-bridge": "^3.0|^4.0",
-        "liip/rmt": "^1.2"
+        "symfony/phpunit-bridge": "^3.0|^4.0"
     }
 }
